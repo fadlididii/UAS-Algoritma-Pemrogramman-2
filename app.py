@@ -88,12 +88,16 @@ def predict():
             # Correct the order of columns as per the trained model's expectations
             columns = ['months_as_customer', 'age', 'umbrella_limit', 'insured_sex', 'insured_education_level', 'incident_date', 'incident_type', 'collision_type', 'incident_severity', 'authorities_contacted', 'police_report_available', 'vehicle_claim', 'auto_year', 'bodily_injuries', 'number_of_vehicles_involved', 'witnesses']
             df = pd.DataFrame([processed_data], columns=columns)
-
+            
+            # Menggunakan predict_proba untuk mendapatkan probabilitas
+            probabilities = model.predict_proba(df)
+            confidence_score = probabilities[0][1] 
+            
             prediction = model.predict(df)
             result = index_to_label(prediction[0])
             result = str(result)
             
-            return render_template('PredictionPage.html', prediction_result = result)
+            return render_template('PredictionPage.html', prediction_result = result, confidence_score=confidence_score)
 
         except Exception as e:
             print("Error occurred:", e)

@@ -398,7 +398,7 @@ b.fraudshield-1-svg1 {
     align-items: center;
     justify-content: center;
     position: relative;
-    top: 1100px;
+    top: 1070px;
     color: #FFF;
     font-family: Outfit;
     font-size: 40px;
@@ -443,7 +443,7 @@ b.fraudshield-1-svg1 {
     border: 0;
     padding: 0;
     background-color: #1b324d;
-    top: 1045px;
+    top: 1035px;
     position: relative;
     left: 288.4px;
     width: 305.6px;
@@ -451,4 +451,16 @@ b.fraudshield-1-svg1 {
     color: white;
     border-radius: 20px;
   }
-  
+  .confidence{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 1185px;
+    color: #FFF;
+    font-family: Outfit;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }

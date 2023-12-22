@@ -237,7 +237,13 @@
         
         {% if prediction_result %}
         <div class="output">The Claim is {{prediction_result}}</div>
-        {% endif %} {% if error %}
+        {% endif %} 
+        
+        {% if confidence_score %}
+        <div class="confidence">Confidence Score: {{ confidence_score | round(2) }}</div>
+        {% endif %}
+        
+        {% if error %}
         <div class="output">
           <p class="predict-output">Error: {{ error }}</p>
         </div>
