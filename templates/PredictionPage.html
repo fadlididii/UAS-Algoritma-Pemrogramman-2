@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='global.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='PredictionPage.css') }}">
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap"
+    />
+  </head>
+  <body>
+    <div class="prediction-page">
+      <div class="nav">
+        <div class="frame2">
+          <img class="fraudshield-1-svg" src="{{url_for('static', filename='images/fs.png')}}" />
+
+          <div class="fraudshield-insurance">FraudShield Insurance</div>
+        </div>
+        <button
+          class="home-page"
+          id="home-page-button"
+          type="button"
+          onclick="window.location.href='{{ url_for('index') }}'"
+        >
+          Home Page
+        </button>
+      </div>
+      <div class="container">
+        <b class="predict-the-claim">Predict The Claim</b>
+        <form id="predictionForm" action="{{url_for('predict')}}" method="post">
+          <div class="form">
+            <div class="customer-name">
+              <div class="customer-name1">Nama Kustomer</div>
+              <input
+                class="customer-name-child"
+                name="name"
+                id="name"
+                type="text"
+                required
+              />
+            </div>
+            <div class="customer-email">
+              <div class="customer-email1">Email Kustomer</div>
+              <input
+                class="customer-email-child"
+                name="email"
+                id="email"
+                type="email"
+                required
+              />
+            </div>
+            <div class="custome-age">
+              <div class="customer-age">Umur Kustomer</div>
+              <input
+                class="custome-age-child"
+                name="age"
+                id="age"
+                type="number"
+                required
+              />
+            </div>
+            <div class="customer-gender">
+              <div class="number-of-vehicles">Jenis Kelamin Kustomer</div>
+              <select class="customer-gender-child" name="gender" id="gender" required>
+                <option value="MALE">Laki - laki</option>
+                <option value="FEMALE">Perempuan</option>
+              </select>
+            </div>
+            <div class="months-as-customer">
+              <div class="how-many-bodily">Berapa Bulan Menjadi Kustomer</div>
+              <input
+                class="custome-age-child"
+                name="month"
+                id="month"
+                type="number"
+                required
+              />
+            </div>
+            <div class="customer-education-level">
+              <div class="customber-education-level">
+                Tingkat Pendidikan Kustomer
+              </div>
+              <select class="customer-email-child" name="edc" id="edc" required>
+                <option value="MD">Dokter Kedokteran</option>
+                <option value="PhD">PhD</option>
+                <option value="Associate">Gelar Diploma</option>
+                <option value="Masters">Magister</option>
+                <option value="High School">Sekolah Menengah Atas (SMA)</option>
+                <option value="College">Mahasiswa</option>
+                <option value="JD">Juris Doctor</option>
+              </select>
+            </div>
+            <div class="incident-date">
+              <div class="how-many-bodily">Tanggal Kejadian</div>
+              <input
+                class="customer-name-child"
+                name="date"
+                id="date"
+                type="date"
+                required
+              />
+            </div>
+            <div class="incident-type">
+              <div class="incident-type1">Jenis Kejadian</div>
+              <select name="type" id="type" class="customer-email-child" required>
+                <option value="Single Vehicle Collision">
+                  Tabrakan Satu Kendaraan
+                </option>
+                <option value="Vehicle Theft">Pencurian Kendaraan</option>
+                <option value="Multi-vehicle Collision">
+                  Tabrakan Lebih dari 1 Kendaraan
+                </option>
+                <option value="Parked Car">Mobil yang diparkir</option>
+              </select>
+            </div>
+            <div class="collision-type">
+              <div class="how-many-bodily">Jenis Tabrakan</div>
+              <select name="collision" id="collision" class="custome-age-child" required>
+                <option value="Side Collision">Tabrakan Samping</option>
+                <option value="Rear Collision">Tabrakan Belakang</option>
+                <option value="Front Collision">Tabrakan Depan</option>
+              </select>
+            </div>
+            <div class="incident-saverity">
+              <div class="incident-saverity1">Tingkat Keparahan Insiden</div>
+              <select
+                name="saverity"
+                id="saverity"
+                class="customer-email-child"
+                required
+              >
+                <option value="Major Damage">Kerusakan Besar</option>
+                <option value="Minor Damage">Kerusakan Kecil</option>
+                <option value="Total Loss">Kerugian Total</option>
+                <option value="Trivial Damage">Kerusakan Sepele</option>
+              </select>
+            </div>
+            <div class="authorities-contacted-parent">
+              <div class="authorities-contacted">
+                Pihak Berwenang yang Dihubungi
+              </div>
+              <select
+                name="contacted"
+                id="contacted"
+                class="customer-name-child"
+                required
+              >
+                <option value="Police">Polisi</option>
+                <option value="Fire">Pemadam Kebakaran</option>
+                <option value="Ambulance">Ambulans</option>
+                <option value="None">Tidak menghubungi</option>
+                <option value="Other">Menghubungi pihak lain</option>
+              </select>
+            </div>
+            <div class="number-of-vehicles-involved-parent">
+              <div class="number-of-vehicles">
+                Jumlah Kendaraan yang Terlibat
+              </div>
+              <input
+                class="customer-email-child"
+                name="involved"
+                id="involved"
+                type="number"
+                required
+              />
+            </div>
+            <div class="how-many-bodily-injuries-parent">
+              <div class="how-many-bodily">Berapa Banyak Cedera Tubuh?</div>
+              <input
+                class="custome-age-child"
+                name="injuries"
+                id="injuries"
+                type="number"
+                required
+              />
+            </div>
+            <div class="how-many-witnesses-parent">
+              <div class="number-of-vehicles">Berapa Banyak Saksi?</div>
+              <input
+                class="customer-gender-child"
+                name="witesses"
+                id="witesses"
+                type="number"
+                required
+              />
+            </div>
+            <div class="police-report-available-parent">
+              <div class="police-report-available">
+                Apakah Terdapat Laporan ke Polisi?
+              </div>
+              <select name="police" id="police" class="customer-name-child" required>
+                <option value="YES">Ya</option>
+                <option value="NO">Tidak</option>
+              </select>
+            </div>
+            <div class="brand-of-car-parent">
+              <div class="brand-of-car">Batas Maksimum Polis Tambahan</div>
+              <input
+                class="customer-email-child"
+                name="umbrella"
+                id="umbrella"
+                type="number"
+                required
+              />
+            </div>
+            <div class="car-year-parent">
+              <div class="how-many-bodily">Tahun Mobil</div>
+              <input
+                class="custome-age-child"
+                name="year"
+                id="year"
+                type="number"
+                required
+              />
+            </div>
+            <div class="vehicle-claim-parent">
+              <div class="customber-education-level">
+                Berapa Klaim Mobil yang Didapat?
+              </div>
+              <input
+                class="customer-gender-child"
+                name="claim"
+                id="claim"
+                type="number"
+                required
+              />
+            </div>
+          </div>
+          <button class="button" style="align-items: center;">P R E D I C T</button>
+        </form>
+        
+        {% if prediction_result %}
+        <div class="output">The Claim is {{prediction_result}}</div>
+        {% endif %} {% if error %}
+        <div class="output">
+          <p class="predict-output">Error: {{ error }}</p>
+        </div>
+        {% endif %}
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='global.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap"
+    />
+  </head>
+  <body>
+    <div class="landing-page">
+      <div class="team">
+        <div class="staff-3">
+          <div class="staff-3-child"></div>
+          <img class="mask-group-icon" alt="" src="{{ url_for('static', filename='images/cucun.jpg') }}">
+
+          <div class="fadli-muhammad-airlangga-container">
+            <p class="fadli-muhammad">Muhammad Aqeela</p>
+            <p class="fadli-muhammad">Airlangga University </p>
+            <p class="fadli-muhammad">Major in Data Science Technology</p>
+            <p class="fadli-muhammad">Class of 2021</p>
+          </div>
+        </div>
+        <div class="staff-2">
+          <div class="staff-3-child"></div>
+          <img
+            class="mask-group-icon"
+            alt=""
+            src="{{ url_for('static', filename='images/shiba.jpg') }}"
+          />
+
+          <div class="shiba-salsabilla-airlangga-container">
+            <p class="fadli-muhammad">Shiba Salsabilla</p>
+            <p class="fadli-muhammad">Airlangga University</p>
+            <p class="fadli-muhammad">Major in Data Science Technology</p>
+            <p class="fadli-muhammad">Class of 2022</p>
+          </div>
+        </div>
+        <div class="staff-1">
+          <div class="staff-3-child"></div>
+          <img
+            class="mask-group-icon"
+            alt=""
+            src="{{ url_for('static', filename='images/fadli.jpg') }}"
+          />
+
+          <div class="fadli-muhammad-airlangga-container">
+            <p class="fadli-muhammad">Fadli Muhammad</p>
+            <p class="fadli-muhammad">Airlangga University</p>
+            <p class="fadli-muhammad">Major in Data Science Technology</p>
+            <p class="fadli-muhammad">Class of 2022</p>
+          </div>
+        </div>
+        <b class="our-team">Our Team</b>
+      </div>
+      <div class="about-us">
+        <div class="effect-2"></div>
+        <div class="frame"></div>
+        <div class="frame1">
+          <div class="effect-3-parent">
+            <div class="effect-3"></div>
+            <div class="since-2023-fraudshield-container">
+              <p class="fadli-muhammad">
+                Sejak tahun 2023, FraudShield Insurance berdedikasi untuk 
+                membantu perusahaan dalam mendeteksi pola 
+                mencurigakan dari pemegang polis yang melakukan klaim asuransi.
+              </p>
+              <p class="fadli-muhammad">&nbsp;</p>
+              <p class="fadli-muhammad">
+                Dengan memanfaatkan algoritme canggih, kami memiliki 
+                kemampuan untuk mengenali pola mencurigakan dan 
+                memberikan persentase yang menunjukkan kemungkinan 
+                penipuan klaim asuransi.
+              </p>
+              <p class="fadli-muhammad">&nbsp;</p>
+              <p class="fadli-muhammad">
+                Tujuan kami adalah memastikan proses klaim berjalan adil, 
+                efisien, dan bebas penipuan, semuanya demi kepuasan klien 
+                kami dan keberlangsungan industri asuransi.
+              </p>
+            </div>
+            <img
+              class="exploring-virtual-reality-with"
+              alt=""
+              src="{{ url_for('static', filename='images/bola.svg') }}"
+            />
+
+            <b class="about-us1">About us</b>
+          </div>
+        </div>
+      </div>
+      <div class="interface">
+        <img
+          class="fraudshield-1-svg"
+          alt=""
+          src="{{ url_for('static', filename='images/fs.png') }}"
+        />
+
+        <div class="content">
+          <b class="fraudshield-insurance">FraudShield Insurance</b>
+          <div class="fraudshield-insurance-is-container">
+            <p class="fadli-muhammad">
+              FraudShield Insurance adalah aplikasi web inovatif khusus
+              dirancang untuk mendeteksi potensi klaim penipuan dalam asuransi mobil.
+            </p>
+          </div>
+          <button class="get-started-wrapper" id="predict" type="button" onclick="window.location.href='{{ url_for('predictionpage') }}'">
+            <div class="get-started">Get Started</div>
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

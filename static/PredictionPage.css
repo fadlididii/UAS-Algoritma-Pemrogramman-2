@@ -1,0 +1,454 @@
+b.fraudshield-1-svg1 {
+    position: relative;
+    width: 65px;
+    height: 71px;
+    object-fit: cover;
+  }
+  .fraudshield-insurance1 {
+    position: relative;
+    font-weight: 600;
+    display: inline-block;
+    width: 469px;
+    height: 56px;
+    flex-shrink: 0;
+  }
+  .frame2 {
+    width: 562px;
+    height: 71px;
+    overflow: hidden;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: var(--gap-13xl);
+  }
+  .home-page {
+    cursor: pointer;
+    font-style: normal;
+    border: 0;
+    padding: 0;
+    background-color: transparent;
+    position: relative;
+    font-size: var(--font-size-24xl);
+    font-family: var(--font-outfit);
+    color: var(--color-white);
+    text-align: left;
+    display: inline-block;
+  }
+  .home-page:hover {
+    text-decoration: underline;
+  }
+  .nav {
+    width: 1063px;
+    height: 71px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 277px;
+  }
+  .predict-the-claim {
+    position: absolute;
+    top: 41px;
+    left: 147.7px;
+    display: inline-block;
+    width: 587px;
+    height: 99px;
+  }
+  .customer-name1 {
+    position: relative;
+    font-weight: 600;
+    display: inline-block;
+    width: 306px;
+    height: 24px;
+    flex-shrink: 0;
+  }
+  .customer-name-child {
+    border: 0;
+    background-color: var(--color-white);
+    position: relative;
+    width: 328px;
+    height: 32px;
+  }
+  .customer-name {
+    position: absolute;
+    top: 16.3px;
+    left: 0;
+    width: 327.9px;
+    height: 96.8px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: var(--gap-4xs);
+  }
+  .customer-email1 {
+    position: relative;
+    font-weight: 600;
+    display: inline-block;
+    width: 326px;
+    height: 24px;
+    flex-shrink: 0;
+  }
+  .customer-email-child {
+    border: 0;
+    background-color: var(--color-white);
+    position: relative;
+    width: 333px;
+    height: 32px;
+  }
+  .customer-email {
+    position: absolute;
+    top: 0;
+    left: 392.3px;
+    width: 333px;
+    height: 97px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: var(--gap-4xs);
+  }
+  .customer-age {
+    position: relative;
+    font-weight: 600;
+    display: inline-block;
+    width: 293px;
+    height: 24px;
+    flex-shrink: 0;
+  }
+  .custome-age-child {
+    border: 0;
+    background-color: var(--color-white);
+    position: relative;
+    width: 328px;
+    height: 33px;
+  }
+  .custome-age {
+    position: absolute;
+    top: 105.3px;
+    left: 1px;
+    width: 327.9px;
+    height: 96.8px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: var(--gap-4xs);
+  }
+  .customer-gender-child {
+    border: 0;
+    background-color: var(--color-white);
+    position: relative;
+    width: 333px;
+    height: 33px;
+  }
+  .customer-gender,
+  .months-as-customer {
+    position: absolute;
+    top: 74.3px;
+    left: 392px;
+    width: 333px;
+    height: 97px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    gap: var(--gap-5xs);
+  }
+  .months-as-customer {
+    top: 202.3px;
+    left: 1px;
+    width: 328px;
+    height: 96.5px;
+    justify-content: flex-start;
+  }
+  .customber-education-level {
+    position: relative;
+    font-weight: 600;
+    display: inline-block;
+    width: 333px;
+    height: 24px;
+    flex-shrink: 0;
+  }
+  .customer-education-level,
+  .incident-date {
+    position: absolute;
+    top: 171.3px;
+    left: 393.3px;
+    width: 333.1px;
+    height: 96.2px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    gap: var(--gap-4xs);
+  }
+  .incident-date {
+    top: 298.3px;
+    left: 0.4px;
+    width: 328px;
+    height: 96.4px;
+    justify-content: flex-start;
+    gap: var(--gap-5xs);
+  }
+  .incident-type1 {
+    position: relative;
+    font-weight: 600;
+    display: inline-block;
+    width: 283px;
+    height: 24px;
+    flex-shrink: 0;
+  }
+  .collision-type,
+  .incident-type {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .incident-type {
+    top: 298.3px;
+    left: 392.3px;
+    width: 333px;
+    height: 96px;
+    padding: 0 0 0 0.093505859375px;
+    box-sizing: border-box;
+    gap: var(--gap-4xs);
+  }
+  .collision-type {
+    top: 394.3px;
+    left: 1.4px;
+    width: 328px;
+    height: 96.2px;
+    gap: var(--gap-5xs);
+  }
+  .incident-saverity1 {
+    position: relative;
+    font-weight: 600;
+    display: inline-block;
+    width: 319px;
+    height: 24px;
+    flex-shrink: 0;
+  }
+  .incident-saverity {
+    position: absolute;
+    top: 394.3px;
+    left: 393.3px;
+    width: 333px;
+    height: 95.9px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0 0 0 0.129150390625px;
+    box-sizing: border-box;
+    gap: var(--gap-5xs);
+  }
+  .authorities-contacted {
+    position: relative;
+    font-weight: 600;
+    display: inline-block;
+    width: 327px;
+    height: 24px;
+    flex-shrink: 0;
+  }
+  .authorities-contacted-parent {
+    position: absolute;
+    top: 459.3px;
+    left: 1.4px;
+    width: 327.9px;
+    height: 95.9px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    gap: var(--gap-5xs);
+  }
+  .number-of-vehicles {
+    position: relative;
+    font-weight: 600;
+    display: inline-block;
+    width: 332px;
+    height: 24px;
+    flex-shrink: 0;
+  }
+  .number-of-vehicles-involved-parent {
+    position: absolute;
+    top: 459.3px;
+    left: 393.3px;
+    width: 333px;
+    height: 96.1px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    gap: var(--gap-5xs);
+  }
+  .how-many-bodily {
+    position: relative;
+    font-weight: 600;
+    display: inline-block;
+    width: 328px;
+    height: 24px;
+    flex-shrink: 0;
+  }
+  .how-many-bodily-injuries-parent,
+  .how-many-witnesses-parent {
+    position: absolute;
+    top: 586.3px;
+    left: 1.4px;
+    width: 328px;
+    height: 95.8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: var(--gap-5xs);
+  }
+  .how-many-witnesses-parent {
+    top: 555.3px;
+    left: 393.3px;
+    width: 333px;
+    height: 96px;
+    align-items: flex-start;
+    justify-content: flex-end;
+  }
+  .police-report-available {
+    position: relative;
+    font-weight: 600;
+    display: inline-block;
+    width: 327px;
+    height: 25px;
+    flex-shrink: 0;
+  }
+  .police-report-available-parent {
+    position: absolute;
+    top: 651.3px;
+    left: 1.4px;
+    width: 327.9px;
+    height: 96.8px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    gap: var(--gap-5xs);
+  }
+  .brand-of-car {
+    position: relative;
+    font-weight: 600;
+    display: inline-block;
+    width: 333px;
+    height: 25px;
+    flex-shrink: 0;
+  }
+  .brand-of-car-parent,
+  .car-year-parent,
+  .vehicle-claim-parent {
+    position: absolute;
+    top: 651.3px;
+    left: 393.3px;
+    width: 333.1px;
+    height: 97px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    gap: var(--gap-5xs);
+  }
+  .car-year-parent,
+  .vehicle-claim-parent {
+    top: 779.3px;
+    left: 1.4px;
+    width: 328px;
+    height: 96.8px;
+    align-items: center;
+    justify-content: flex-start;
+    gap: var(--gap-4xs);
+  }
+  .vehicle-claim-parent {
+    top: 748.3px;
+    left: 392.3px;
+    width: 333.1px;
+    height: 97px;
+    align-items: flex-start;
+    justify-content: flex-end;
+  }
+  .form {
+    position: absolute;
+    top: 171px;
+    left: 78px;
+    width: 726.4px;
+    height: 876.2px;
+    font-size: var(--font-size-xl);
+  }
+  .predict {
+    width: 305.635px;
+    height: 61.706px; 
+  }
+  .prediction-score {
+    top: 66.5px;
+    left: 67.5px;
+    width: 338.4px;
+  }
+  .output {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 1100px;
+    color: #FFF;
+    font-family: Outfit;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+  .container {
+    color: #FFF;
+    font-family: Outfit;
+    font-size: 43px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    position: relative;
+    border-radius: var(--br-xl);
+    background-color: #1f677f;
+    width: 882.4px;
+    height: 1338.2px;
+    font-size: 70px;
+  }
+  .prediction-page {
+    position: relative;
+    background-color: var(--color-gray);
+    width: 100%;
+    height: 1731px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: var(--padding-66xl) 189px var(--padding-66xl) 188px;
+    box-sizing: border-box;
+    gap: 87px;
+    text-align: left;
+    font-size: var(--font-size-24xl);
+    color: var(--color-white);
+    font-family: var(--font-outfit);
+  }
+  .button{
+    cursor: pointer;
+    border: 0;
+    padding: 0;
+    background-color: #1b324d;
+    top: 1045px;
+    position: relative;
+    left: 288.4px;
+    width: 305.6px;
+    height: 61.7px;
+    color: white;
+    border-radius: 20px;
+  }
+  
