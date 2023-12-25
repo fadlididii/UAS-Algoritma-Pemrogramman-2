@@ -224,7 +224,7 @@
     padding: 80px 239px 57px;
     box-sizing: border-box;
     gap: var(--gap-13xl);
-    background-image: url(./assets/background.png);
+    background-image: url(./images/background.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top;
