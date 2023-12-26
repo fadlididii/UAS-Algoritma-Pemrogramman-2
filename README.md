@@ -1,4 +1,4 @@
-# Repository Mata Kuliah Algoritma Pemrograman II
+# Repository Project UAS Algoritma Pemrograman II Kelompok 16
 
 Selamat datang di repository ini! Ini adalah repositori yang berisi file file yang dibuat untuk memenuhi project UAS Algoritma Pemrogramman II.
 
