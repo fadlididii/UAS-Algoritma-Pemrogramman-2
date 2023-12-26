@@ -2,7 +2,7 @@
 
 Selamat datang di repository ini! Ini adalah repositori yang berisi file file yang dibuat untuk memenuhi project UAS Algoritma Pemrogramman II.
 
-Program Language : Python
+Program Language : Python, HTML, CSS
 
 Language for this project : Bahasa Indonesia
 
@@ -32,5 +32,6 @@ FraudShield Insurance adalah aplikasi web inovatif khusus dirancang untuk mendet
 ## Tampilan Prediction Page
 ![Screenshot 2023-12-26 234408](https://github.com/fadlididii/UAS-Algoritma-Pemrogramman-2/assets/143589415/99afa136-8ca0-4267-a76b-757b6b08ddeb)
 
-Contact
+### Contact
+
 For any additional questions about this project, you can reach out to me at fadlimuh3012@gmail.com
